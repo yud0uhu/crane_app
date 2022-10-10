@@ -6,27 +6,27 @@ class HomePage extends StatelessWidget {
   final List<Map<String, dynamic>> textType = [
     {
       'text': "アスペン(米国)",
-      'subtext': "乗り換え:1回・6h15m",
+      'subtext': "乗継:1回・6h15m",
       'image': Image.network(
-          height: 75, "https://picsum.photos/250?image=9", fit: BoxFit.cover)
+          height: 75, "https://picsum.photos/250?image=1", fit: BoxFit.cover)
     },
     {
       'text': "ビッグサー(米国)",
-      'subtext': "直行便・13h30m",
+      'subtext': "宜行便・13h30m",
       'image': Image.network(
-          height: 75, "https://picsum.photos/250?image=9", fit: BoxFit.cover)
+          height: 75, "https://picsum.photos/250?image=2", fit: BoxFit.cover)
     },
     {
       'text': "クンブ渓谷(ネパール)",
-      'subtext': "直行便・5h16m",
+      'subtext': "宜行便・5h16m",
       'image': Image.network(
-          height: 75, "https://picsum.photos/250?image=9", fit: BoxFit.cover)
+          height: 75, "https://picsum.photos/250?image=3", fit: BoxFit.cover)
     },
     {
       'text': "マチュピチュ(ペルー)",
-      'subtext': "乗り継ぎ:2回・19h40m",
+      'subtext': "乗継:2回・19h40m",
       'image': Image.network(
-          height: 75, "https://picsum.photos/250?image=9", fit: BoxFit.cover)
+          height: 75, "https://picsum.photos/250?image=4", fit: BoxFit.cover)
     },
     {
       'text': "マレ(モルディブ)",
