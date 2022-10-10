@@ -45,7 +45,10 @@ class HomePage extends StatelessWidget {
             child: Scrollbar(
                 child: SingleChildScrollView(
                     child: Column(children: <Widget>[
-              Text("目的地でフライトを検索"),
+              Container(
+                  margin: const EdgeInsets.all(20),
+                  width: double.infinity,
+                  child: const Text(textAlign: TextAlign.left, "目的地でフライトを検索")),
               Column(
                   children: textType
                       .map(
@@ -68,7 +71,8 @@ class HomePage extends StatelessWidget {
                                           MainAxisAlignment.center,
                                       children: <Widget>[
                                         Text(e['text'],
-                                            style: TextStyle(fontSize: 20)),
+                                            style:
+                                                const TextStyle(fontSize: 20)),
                                         Text(e['subtext'],
                                             style: TextStyle(
                                                 color: Colors.grey[800]))

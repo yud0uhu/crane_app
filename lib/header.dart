@@ -28,7 +28,7 @@ class Header extends StatelessWidget {
       actions: <Widget>[
         OutlinedButton(
           style: OutlinedButton.styleFrom(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             shape: const StadiumBorder(),
             side: const BorderSide(color: Colors.white, width: 2),
           ),
@@ -40,11 +40,11 @@ class Header extends StatelessWidget {
         ),
         TextButton(
           style: OutlinedButton.styleFrom(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             // shape: const StadiumBorder(),
             // side: const BorderSide(color: Colors.white, width: 2),
           ),
-          child: Text(style: TextStyle(color: Colors.white), "宿泊"),
+          child: const Text(style: TextStyle(color: Colors.white), "宿泊"),
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text('This is a snackbar')));
@@ -52,11 +52,11 @@ class Header extends StatelessWidget {
         ),
         TextButton(
           style: OutlinedButton.styleFrom(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             // shape: const StadiumBorder(),
             // side: const BorderSide(color: Colors.white, width: 2),
           ),
-          child: Text(style: TextStyle(color: Colors.white), "食事"),
+          child: const Text(style: TextStyle(color: Colors.white), "食事"),
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text('This is a snackbar')));
@@ -68,7 +68,7 @@ class Header extends StatelessWidget {
         children: <Widget>[
           Flexible(
               child: Container(
-                  color: Color.fromRGBO(93, 16, 73, 1),
+                  color: const Color.fromRGBO(93, 16, 73, 1),
                   padding: const EdgeInsets.only(top: 110),
                   child: ListView(
                     padding: const EdgeInsets.all(10),
@@ -79,9 +79,9 @@ class Header extends StatelessWidget {
                             child: TextField(
                               obscureText: true,
                               decoration: InputDecoration(
-                                fillColor: Color.fromRGBO(114, 13, 93, 1),
+                                fillColor: const Color.fromRGBO(114, 13, 93, 1),
                                 filled: true,
-                                hintStyle: (TextStyle(
+                                hintStyle: (const TextStyle(
                                     color: Color.fromRGBO(199, 158, 191, 1))),
                                 contentPadding: const EdgeInsets.all(10),
                                 prefixIcon: e['icon'],
