@@ -75,9 +75,9 @@ class Header extends StatelessWidget {
                     children: textType
                         .map(
                           (Map<String, dynamic> e) => Container(
+                            width: double.infinity,
                             padding: const EdgeInsets.all(5),
                             child: TextField(
-                              obscureText: true,
                               decoration: InputDecoration(
                                 fillColor: const Color.fromRGBO(114, 13, 93, 1),
                                 filled: true,
