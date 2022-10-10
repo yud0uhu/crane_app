@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -63,19 +65,28 @@ class HomePage extends StatelessWidget {
                                   ClipRRect(
                                       borderRadius: BorderRadius.circular(8.0),
                                       child: e['image']),
-                                  SizedBox(
+                                  Container(
+                                    padding: const EdgeInsets.all(10),
                                     width: 200,
                                     height: 100,
                                     child: Column(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: <Widget>[
-                                        Text(e['text'],
-                                            style:
-                                                const TextStyle(fontSize: 20)),
-                                        Text(e['subtext'],
-                                            style: TextStyle(
-                                                color: Colors.grey[800]))
+                                        SizedBox(
+                                            width: double.infinity,
+                                            child: Text(
+                                                textAlign: TextAlign.left,
+                                                e['text'].toString(),
+                                                style: const TextStyle(
+                                                    fontSize: 18))),
+                                        SizedBox(
+                                            width: double.infinity,
+                                            child: Text(
+                                                textAlign: TextAlign.left,
+                                                e['subtext'].toString(),
+                                                style: TextStyle(
+                                                    color: Colors.grey[800]))),
                                       ],
                                     ),
                                   )
